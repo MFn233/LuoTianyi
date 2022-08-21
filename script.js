@@ -1,7 +1,7 @@
 function countdown() {
-    var now = new Date(); //获取服务器时间
+    var now1 = new Date(); //获取服务器时间
     var end = new Date((now.getFullYear() + 1) + "/7/12 20:00:00"); //结束时间
-
+    var now = now1.replace(/\-/g, "/"); //将“-”替换为“/“，以此修复safari显示问题
 
     var m = Math.round((end - now) / 1000); //服务器时间减去结束时间
     var day = parseInt(m / 24 / 3600); //计算时间
