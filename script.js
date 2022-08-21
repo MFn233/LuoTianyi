@@ -1,6 +1,6 @@
 function countdown() {
     var now = new Date(); //获取服务器时间
-    var end = new Date((now.getFullYear() + 1) + "-7-12 20:00:00"); //结束时间
+    var end = new Date((now.getFullYear() + 1) + "/7/12 20:00:00"); //结束时间
 
 
     var m = Math.round((end - now) / 1000); //服务器时间减去结束时间
